@@ -24,6 +24,7 @@ def _patched_setstate(self, state):
     # now call the real __setstate__
     return _orig_setstate(self, state)
 
+
 # apply the patch
 _tree_mod.Tree.__setstate__ = _patched_setstate
 
@@ -31,5 +32,5 @@ _tree_mod.Tree.__setstate__ = _patched_setstate
 # Now it’s safe to load your pickle:
 
 
-model = joblib.load("path/to/your/model.pkl")
+model = joblib.load("model.pkl")
 print("✅ loaded under sklearn", model)  
