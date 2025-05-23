@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fafafa;
+}
+/* KPI Cards */
+.kpi-card {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fff;
+}
+.kpi-blue   { background-color: #4e8cff; }
+.kpi-green  { background-color: #00c49a; }
+.kpi-orange { background-color: #ff7f0e; }
+/* Layout Flex */
+.main-flex {
+  display: flex;
+  height: calc(100vh - 40px);
+}
+.sidebar, .sidebar-right {
+  background: #f0f0f0;
+  padding: 16px;
+  width: 200px;
+}
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
